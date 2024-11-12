@@ -14,7 +14,7 @@ function ListGroup(){
         */}
 
 <h2> Our Cities</h2>
-<table><tr>{items.map((item) => <td> | {item} | </td>)}</tr></table>
+<table><tbody><tr>{items.map((item) => <td> | {item} | </td>)}</tr></tbody></table>
 
 
     </>

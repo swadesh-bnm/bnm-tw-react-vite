@@ -1,12 +1,12 @@
 function TWMenu(){
 
-    const items = ["Cities","Featured Blogs", "Hidden Gems"];
+    const items = ["Travel","Tourism","News", "Fashion","Entertainment"];
     return (
     <>
-    <h1>Menu</h1>
-    <ul className = "list-group">
-    {items.map ((item) => <li className="list-group-item" key={item} onClick={() => console.log({item})} >{item}</li>)}
-    </ul>
+    
+    <div>{items.map ((item) => <button background-color="FAD7A0" key={item} onClick={() => console.log({item})} >{item}</button>)}</div>
+    
+    
     </>
     )
 }
