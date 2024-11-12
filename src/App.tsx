@@ -4,6 +4,7 @@ import ListGroup from './components/ListGroup';
 import Blogs from './components/Blogs';
 import HiddenGems from './components/HiddenGems';
 import FeaturedVideo from './components/FeaturedVideo';
+import TWMenu from './components/TWMenu';
 
 import './App.css';
 
@@ -16,13 +17,16 @@ export function App() {
       <h1>Tourism Wings</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>{count}</button>
-        <Message />
+        <table>
+        <tr><td><Message/></td><td><TWMenu/></td></tr>
+       
         {/*<Clock />*/}
         {/*<Transactions />*/}
-        <FeaturedVideo/>
-        <ListGroup />
-        <Blogs/>
-        <HiddenGems/>
+        <tr><td><FeaturedVideo/></td></tr>
+        <tr><td><ListGroup /></td></tr>
+        <tr><td><Blogs/></td></tr>
+        <tr><td><HiddenGems/></td></tr>
+        </table>
 
       </div>
 
